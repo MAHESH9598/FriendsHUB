@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>Base File</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    li {
+        float: left;
+    }
+    li a{
+        display: black;
+        color: white;
+        text-align: center;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .active{
+        background-color: green;
+    }
+    li a:hover{
+        background-color: orangered;
+    }
+    .footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    h1{
+        font-size: 50px;
+        text-shadow: 5px 5px 5px red;
+        margin-top: 20px;
+
+    }
+</style>
+<body>
+
+<ul>
+    <li><a href="/home/" class="active">Home</a></li>
+    <li><a href="/contact/">Contact</a></li>
+    <li><a href="/courses/">Courses</a></li>
+    <li><a href="/feedback/">Feedback</a></li>
+    <li><a href="/team/">Our Team</a></li>
+    <li><a href="/gallery/">Gallery</a></li>
+
+</ul>
+<center><h1>Welcome to Mahesh World</h1></center>
+</body>
+{% block content %}
+{% endblock %}
+<footer class="footer"><h3>Thank You All</h3></footer>
+</html>
